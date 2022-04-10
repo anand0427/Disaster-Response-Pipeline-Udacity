@@ -5,7 +5,9 @@ The purpose of this project is to create and serve a classifier as a service for
 
 The model is trained from in-house data which is available in the data/ directory. The data which is available as a csv file is processed and pushed into a sqldb. The sqldb is then called into the workspace to train a MultiOutputClassifier. 
 
-The classifier is saved as a pickle model in the models/ directory and called into a Flask app to serve in an API.
+The classifier is saved as a pickle model in the models/ directory and called into a Flask app to serve in an API. 
+
+The Flask app also serves a plotly Bar graph to visualize details from dataframe like related, aid etc.
 
 ### Dependencies
 
