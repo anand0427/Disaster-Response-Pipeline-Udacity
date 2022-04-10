@@ -27,7 +27,7 @@ def clean_data(df):
     df = pd.merge(df, categories, left_index=True, right_index=True)
     
     df = df.drop(df[df['related'] == 2].index, axis=0)
-    print(df['related'].value_counts())
+    
     
     
     for column in ['id', 'message','original', 'genre']:
